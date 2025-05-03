@@ -1,0 +1,12 @@
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-clip: ;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Fira Code', monospace;
+  text-shadow: 0 0 10px #a9ffee;
+}
