@@ -29,8 +29,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 button{
@@ -45,7 +44,7 @@ button{
 }
 
 button:hover {
-  background-color: #01C38D; /* Green */
+  background-color: #01C38D;
   color: white;
 }
 
@@ -56,7 +55,7 @@ button:active {
 }
 
 #text1 {
-  display: none; /* Скрыто по умолчанию */
+  display: none;
   position: fixed;
   top: 30%;
   left: 50%;
@@ -70,7 +69,7 @@ button:active {
   text-align: center;
 }
 #text2 {
-  display: none; /* Скрыто по умолчанию */
+  display: none;
   position: fixed;
   top: 30%;
   left: 50%;
