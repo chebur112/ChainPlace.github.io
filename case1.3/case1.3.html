@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto Detective Explorer</title>
+  <link rel="stylesheet" href="case1.3.css" />
+  <script src="case1.3.js" defer></script>
+</head>
+<body>
+  <h1>Допрос жертвы</h1>
+
+  <div id="dialogue">
+    <div class="victim">
+      <b>Алексей:</b><br />
+      Спасибо, что пришли, детектив. Вчера ночью с моего аккаунта на бирже исчезло почти полмиллиона долларов в ETH. Я в панике и не знаю, что делать.
+    </div>
+    <div class="thought">
+      <i>Первое — опросить Алексея и понять, как всё произошло. Нужно узнать, не было ли подозрительных событий с его аккаунтом или устройствами.</i>
+    </div>
+    <div class="detective">
+      <b>Игрок (вы):</b><br />
+      Расскажите, когда в последний раз вы заходили в аккаунт? Какие устройства использовали? Может, кто-то видел ваши пароли или seed-фразы?
+    </div>
+    <div class="victim">
+      <b>Алексей:</b><br />
+      Последний раз я заходил вчера с нового ноутбука. Никому не показывал свои пароли и seed-фразы — я же знаю, что это святое... Но что-то случилось, я просто не понимаю что.
+    </div>
+  </div>
+
+  <div id="clues">
+    <b>Зацепки для расследования:</b><br /><br />
+    <button data-clue="spyware">1. Проверить компьютер Алексея на наличие шпионских программ.</button>
+    <button data-clue="transactions">2. Проверить историю транзакций на бирже.</button>
+    <button data-clue="devices">3. Спросить про устройства, которые имели доступ к аккаунту.</button>
+    <button data-clue="phishing">4. Проверить подозрительные сообщения и письма (фишинг).</button>
+  </div>
+
+  <div id="clueText"></div>
+  <div id="miniGameContainer"></div>
+  <div id="actionButtonContainer"></div>
+</body>
+</html>

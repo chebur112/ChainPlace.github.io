@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детективные дела</title>
+  <link rel="stylesheet" href="levesl.css">
+  <script src="levels.js"></script>
+</head>
+<body>
+  <div class="board-background"></div>
+  
+  <div class="container">
+    <h1>Выберите дело</h1>
+    
+    <div class="cases-grid">
+      <div class="case-card" data-case="1">
+        <div class="case-content">
+          <h2>Дело #001</h2>
+          <button class="case-btn" data-case="1">Выбрать</button>
+        </div>
+      </div>
+
+      <div class="case-card locked" data-case="2">
+        <div class="case-content">
+          <h2>Дело #002</h2>
+          <button class="case-btn" disabled>Заблокировано</button>
+        </div>
+      </div>
+      
+      <div class="case-card locked" data-case="3">
+        <div class="case-content">
+          <h2>Дело #003</h2>
+          <button class="case-btn" disabled>Заблокировано</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="case-preview">
+      <p>Наведите на доступное дело, чтобы увидеть описание</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgba(19, 45, 70, 0.8);
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: 1px solid #01c38d;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #01c38d;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+/* Кнопки */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #01c38d;
+  color: #132d46;
+}
+
+.btn-primary:hover {
+  background-color: #00a87a;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: rgba(19, 45, 70, 0.8);
+  color: white;
+  border: 1px solid #01c38d;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(1, 195, 141, 0.2);
+}
+
+/* Поле ввода имени */
+.name-input-container {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background-color: rgba(19, 45, 70, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #01c38d;
+  width: 250px;
+}
+
+.name-input-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.name-input-container input {
+  width: 100%;
+  padding: 10px 30px 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #01c38d;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1rem;
+}
+
+.name-input-container input:focus {
+  outline: none;
+  border-color: white;
+}
+
+.clear-input {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #01c38d;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.clear-input:hover {
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #132d46;
+  margin: 5% auto;
+  padding: 25px;
+  border: 1px solid #01c38d;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  max-height: 80vh;
+  position: relative;
+}
+
+.modal h3 {
+  color: #01c38d;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.scroll-content {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.scroll-content p {
+  line-height: 1.6;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #01c38d;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: white;
+}
+
+.confirmation-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.confirmation-content {
+  background-color: #132d46;
+  margin: 20% auto;
+  padding: 30px;
+  border: 1px solid #01c38d;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn-confirm, .btn-cancel {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-confirm {
+  background-color: #01c38d;
+  color: #132d46;
+}
+
+.btn-confirm:hover {
+  background-color: #00a87a;
+}
+
+.btn-cancel {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #e60000;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .name-input-container {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
+  }
+  
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+  }
+}
