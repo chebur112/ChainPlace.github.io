@@ -221,7 +221,7 @@ function showProceedButton() {
   btn.style.cursor = 'pointer';
 
   btn.addEventListener('click', () => {
-    window.location.href = '/index.html.html';
+    window.location.href = '/1stCaseEnd/1stCase.html';
   });
 
   container.appendChild(btn);

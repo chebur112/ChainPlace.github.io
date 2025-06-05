@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Обыск квартиры</title>
+    <link rel="stylesheet" href="1stCase.css" />
+    <script src="1stCase.js"></script>
+  </head>
+  <body>
+    <div class="image-container">
+      <img id="main-image" src="./image/back.jpeg" alt="Квартира" />
+      <svg id="highlight-overlay" class="highlight-overlay"></svg>
+    </div>
+
+    <div id="welcome-modal" class="modal" style="display: flex">
+      <div class="modal-content">
+        <p>Вы попали на обыск квартиры преступника. Вам необходимо найти все улики расположенные в комнате</p>
+        <button id="welcome-ok-btn">OK</button>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+  </body>
+</html>
